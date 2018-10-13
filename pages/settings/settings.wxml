@@ -1,5 +1,5 @@
 <!--pages/settings/settings.wxml-->
-<view >
+<view class="settings-page">
 <text  class="title">Settings</text>
 
 <checkbox-group bindchange="checkboxChange">

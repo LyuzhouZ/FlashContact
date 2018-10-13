@@ -1,5 +1,10 @@
 /* pages/settings/settings.wxss */
 
+.settings-page{
+  padding-left: 12px;
+   padding-right: 12px;
+}
+
 .title{
     margin: 10px 0;
     text-align: center;
