@@ -19,3 +19,23 @@
     margin-right: 5px;
      width: 40%;
 }
+
+.weui-search-bar__input{
+text-align: center;
+    display: block;
+}
+
+.search_button{
+    text-align: center;
+     display: block;
+}
+
+.title{
+    margin: 10px 0;
+    text-align: center;
+    padding: 4px 0;
+    /* border-top: 1px solid #000; */
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    display: block;
+}

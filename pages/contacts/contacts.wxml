@@ -1,5 +1,5 @@
 <!--pages/contacts/contacts.wxml-->
-<text>Contacts</text>
+<text class='title'>Contacts</text>
 <view class="page">
     <view class="page__hd">
         <view class="page__title"><icon class="weui-icon-search_in-box" type="search" size="14"></icon> Search </view>
@@ -13,7 +13,9 @@
                     <!-- <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
                         <icon type="clear" size="14"></icon>
                     </view> -->
+                    <view  class="search_button"> 
                     <button class="weui-btn mini-btn" type="default" size="mini">Search</button>
+                     </view>
                 </view>
                 <!-- <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
                     <icon class="weui-icon-search" type="search" size="14"></icon>
