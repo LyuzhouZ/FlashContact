@@ -9,7 +9,8 @@
     "pages/getstarted/getstarted",
     "pages/settings/settings",
     "pages/contacts/contacts",
-    "pages/aboutus/aboutus"
+    "pages/aboutus/aboutus",
+    "pages/contactProfile1/contactProfile1"
   ],
   "window": {
     "backgroundTextStyle": "light",

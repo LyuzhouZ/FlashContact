@@ -49,3 +49,7 @@
         </view> -->
     </view>
 </view>
+
+<view bindtap="bindViewTapContact1" class="contact-card_preview">
+ <text>Paul Oladimeji</text>
+</view>

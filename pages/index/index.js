@@ -16,21 +16,10 @@ Page({
       url: '../logs/logs'
     })
   },
-  bindFormSubmit: function(e) {
-    const myDetails = {...e.detail.value}
-    wx.setStorage({
-      key: 'appUserDetails',
-      data: myDetails, success: function(){
-        console.log('Saved user info');
-        setTimeout(()=>{
-          wx.navigateTo({
-            url: '../viewProfile/viewProfile'
-          });
-        }, 1000)
-        
-      }
-    })
-    
+  bindFormSubmit: function() {
+    wx.navigateTo({
+      url: 'pages/profile/profile'
+    });
   },
   displayAge: function() {
     if( app.globalData.sotAge) {

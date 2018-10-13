@@ -8,6 +8,12 @@ Page({
 
   },
 
+  bindViewTapContact1: function () {
+    wx.navigateTo({
+      url: '../contactProfile1/contactProfile1'
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
