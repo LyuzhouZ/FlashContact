@@ -22,16 +22,29 @@ Page({
     console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   },
 
-  radioChange: function (e) {
+  radioChange1: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
 
-    var radioItems = this.data.radioItems;
-    for (var i = 0, len = radioItems.length; i < len; ++i) {
-      radioItems[i].checked = radioItems[i].value == e.detail.value;
+    var radioItems1 = this.data.radioItems1;
+    for (var i = 0, len = radioItems1.length; i < len; ++i) {
+      radioItems1[i].checked = radioItems1[i].value == e.detail.value;
     }
 
     this.setData({
-      radioItems: radioItems
+      radioItems1: radioItems1
+    });
+  },
+
+  radioChange2: function (e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value);
+
+    var radioItems2 = this.data.radioItems2;
+    for (var i = 0, len = radioItems2.length; i < len; ++i) {
+      radioItems2[i].checked = radioItems2[i].value == e.detail.value;
+    }
+
+    this.setData({
+      radioItems2: radioItems2
     });
   },
 

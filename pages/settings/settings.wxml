@@ -16,7 +16,7 @@
 
         <!-- <view class="weui-cells__title">单选列表项</view> -->
         <view class="weui-cells weui-cells_after-title">
-            <radio-group bindchange="radioChange">
+            <radio-group bindchange="radioChange1">
                 <label class="weui-cell weui-check__label" wx:for="{{radioItems1}}" wx:key="value">
                    <view> <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}} </view>
 <!-- 
@@ -40,7 +40,7 @@
 
         <!-- <view class="weui-cells__title">单选列表项</view> -->
         <view class="weui-cells weui-cells_after-title">
-            <radio-group bindchange="radioChange">
+            <radio-group bindchange="radioChange2">
                 <label class="weui-cell weui-check__label" wx:for="{{radioItems2}}" wx:key="value">
                    <view> <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}} </view>
 <!-- 
