@@ -1,4 +1,5 @@
 <!--pages/settings/settings.wxml-->
+<view >
 <text  class="title">Settings</text>
 
 <checkbox-group bindchange="checkboxChange">
@@ -56,7 +57,7 @@
 
 
             <view class="subtitle">
-        <text>Feedback</text>
+        <text>Feedback</text> </view>
         <!-- <view class="weui-cells__title">文本域</view> -->
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
@@ -66,6 +67,12 @@
                 </view>
             </view>
         </view>
+        <view  class="sub_button">
         <button bindtap="submitFeedback" class="weui-btn mini-btn" type="default" size="mini">Submit</button>
     </view>
 
+<view bindtap="bindViewTap" class="subtitle">
+ <text>About Us</text>
+</view>
+
+</view>

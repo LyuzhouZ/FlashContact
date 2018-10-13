@@ -39,6 +39,12 @@ Page({
     console.log('Feedback info：', e.detail.value)
   },
 
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../aboutus/aboutus'
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
