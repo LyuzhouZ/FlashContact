@@ -3,8 +3,9 @@
 <view class="page">
     <view class="page__hd">
         <view class="page__title"><icon class="weui-icon-search_in-box" type="search" size="14"></icon> Search </view>
-        <!-- <view class="page__desc">搜索栏</view> -->
+
     </view>
+    
     <view class="page__bd">
         <view class="weui-search-bar">
             <view class="weui-search-bar__form">
@@ -25,29 +26,69 @@
             <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
             
         </view>
-        <!-- <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-        </view> -->
     </view>
+
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/S.JPG" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Sotiris Handsome Stasinopoulos</view>
+                        <view class="weui-media-box__desc">Sotiris is the founder and CEO of Popular Robotics Inc. He aims to make robots accessible to everyone by providing easy-to-follow robotic courses and encouraging people to share and cooperate. Also an awesome dude from the beautiful Greece</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/L.JPG" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Lyuzhou Zhuang</view>
+                        <view class="weui-media-box__desc">Lyuzhou is the second member of the team. He's taking care of the software part of the robots, working hard to make them do awesome stuff.</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/P.PNG" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Paul Oladimeji</view>
+                        <view class="weui-media-box__desc">Paul is the third member of the team. He's creating beautiful onlice presentations of all the course materials, and of course, the company. </view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/Lucia.JPG" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Lucia Garcia</view>
+                        <view class="weui-media-box__desc">Lucia is responsible for marketing, promoting our app to the startup community.</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/Lini.JPG" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Lini Poeppe</view>
+                        <view class="weui-media-box__desc">Lini does market research, providing the design and development team with insightful market info.</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/Tibet.jpg" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Educators and Developers</view>
+                        <view class="weui-media-box__desc">We are hiring! Interns welcome! :-D</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+
 </view>
 
 <view bindtap="bindViewTapContact1" class="contact-card_preview">

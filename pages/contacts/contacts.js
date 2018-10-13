@@ -1,3 +1,6 @@
+const app = getApp();
+//var base64 = require("image/");
+
 // pages/contacts/contacts.js
 Page({
 
@@ -17,8 +20,11 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
-
+  onLoad: function() {
+  //  this.setData({
+  //    icon20: base64.icon20,
+  //    icon60: base64.icon60
+  //  });
   },
 
   /**

@@ -53,6 +53,18 @@ App({
   // global vars
   globalData: {
     userInfo: null,
-    sotAge: 30
+    sotAge: 30,
+    contacts: [
+      {
+        name: "Jonas",
+        phone: 123,
+        image: ""
+      },
+      {
+        name: "Mike",
+        phone: 456,
+        image: ""
+      }
+    ]
   }
 })

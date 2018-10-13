@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .weui-agree {
   display: block;
   padding: .5em 15px;
@@ -29,3 +30,11 @@
   top: 1px;
   left: 1px;
 }
+=======
+/*!
+ * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
+ * Copyright 2017 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.weui-agree{display:block;padding:.5em 15px;font-size:13px}.weui-agree__text{color:#999}.weui-agree__link{display:inline;color:#586c94}.weui-agree__checkbox{position:absolute;left:-9999px}.weui-agree__checkbox-icon{position:relative;top:2px;display:inline-block;border:1px solid #d1d1d1;background-color:#fff;border-radius:3px;width:11px;height:11px}.weui-agree__checkbox-icon-check{position:absolute;top:1px;left:1px}
+>>>>>>> e622c2ad5e83653c7f4a7526660a618b9c6f092e
