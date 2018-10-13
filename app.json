@@ -17,18 +17,18 @@
     "color": "#131313",
     "list": [{
       "pagePath": "pages/index/index",
-      "iconPath": "image/about.png",
-      "selectedIconPath": "image/about-hover.png",
+      "iconPath": "image/profile-icon.png",
+      "selectedIconPath": "image/profile-icon.png",
       "text": "My Profile"
     }, {
       "pagePath": "pages/index/index",
-      "iconPath": "image/about.png",
-      "selectedIconPath": "image/about-hover.png",
+      "iconPath": "image/contacts-icon.png",
+      "selectedIconPath": "image/contacts-icon.png",
       "text": "Contacts"
     }, {
       "pagePath": "pages/index/index",
-      "iconPath": "image/about.png",
-      "selectedIconPath": "image/about-hover.png",
+      "iconPath": "image/settings-icon.png",
+      "selectedIconPath": "image/settings-icon.png",
       "text": "Settings"
     }]
   }
