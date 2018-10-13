@@ -2,17 +2,19 @@
 Page({
     data: {
       items: [
-        { name: 'USA', value: '美国'},
-        { name: 'CHN', value: '中国', checked: 'true'},
-        { name: 'BRA', value: '巴西'},
-        { name: 'JPN', value: '日本'},
-        { name: 'ENG', value: '英国'},
-        { name: 'TUR', value: '法国'},
+        { name: 'Notifications', value: 'Disable Notifications'},
+        { name: 'Mute', value: 'Mute app sounds'},
+        { name: 'Update', value: 'Auto-update app', checked: 'true' },
       ],
 
-      radioItems: [
-        { name: 'Share contact automatically', value: '0' },
-        { name: 'Ask for permission before sharing contact', value: '1', checked: true }
+      radioItems1: [
+        { name: '中文', value: '0' },
+        { name: 'English', value: '1', checked: true }
+      ],
+
+      radioItems2: [
+        { name: 'Share your contact automatically', value: '0' },
+        { name: 'Ask for permission before sharing your contact', value: '1', checked: true }
       ],
 
     },

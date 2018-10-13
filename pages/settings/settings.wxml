@@ -1,23 +1,25 @@
 <!--pages/settings/settings.wxml-->
 <text  class="title">Settings</text>
-    <view class="subtitle">
-        <text>Privacy</text>
-    </view>
-
 
 <checkbox-group bindchange="checkboxChange">
+ 
   <label class="checkbox" wx:for="{{items}}">
-    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    <view> <checkbox value="{{item.name}}" checked="{{item.checked}}"/> {{item.value}}  </view>
   </label>
+  
 </checkbox-group>
+
+    <view class="subtitle">
+        <text>Language</text>
+    </view>
 
         <!-- <view class="weui-cells__title">单选列表项</view> -->
         <view class="weui-cells weui-cells_after-title">
             <radio-group bindchange="radioChange">
-                <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
-                    <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
-
-                    <view class="weui-cell__bd">{{item.name}}</view>
+                <label class="weui-cell weui-check__label" wx:for="{{radioItems1}}" wx:key="value">
+                   <view> <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}} </view>
+<!-- 
+                    <view class="weui-cell__bd">{{item.name}}</view> -->
                     <!-- <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
                         <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
                     </view> -->
@@ -27,6 +29,31 @@
                 <view class="weui-cell__bd">添加更多</view>
             </view> -->
         </view>
+
+
+
+
+    <view class="subtitle">
+        <text>Privacy</text>
+    </view>
+
+        <!-- <view class="weui-cells__title">单选列表项</view> -->
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioChange">
+                <label class="weui-cell weui-check__label" wx:for="{{radioItems2}}" wx:key="value">
+                   <view> <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}} </view>
+<!-- 
+                    <view class="weui-cell__bd">{{item.name}}</view> -->
+                    <!-- <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view> -->
+                </label>
+            </radio-group>
+            <!-- <view class="weui-cell weui-cell_link">
+                <view class="weui-cell__bd">添加更多</view>
+            </view> -->
+        </view>
+
 
             <view class="subtitle">
         <text>Feedback</text>
@@ -42,4 +69,3 @@
         <button bindtap="submitFeedback" class="weui-btn mini-btn" type="default" size="mini">Submit</button>
     </view>
 
-    
