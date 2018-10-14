@@ -3,7 +3,7 @@
 <view class='bg-img'>
   <view class='page-content'>
     <!-- <text class='logo'>WeLink</text> -->
-    <image style='z-index: 1000; width: 64px; height: 64px;' src='https://i.imgur.com/XgyymEm.png'></image>
+    <image style='z-index: 1000; width: 180px; height: 180px;' src='https://i.imgur.com/OEQvqta.png'></image>
     <text class="desc">WeLink is the easiest way to manage professional contacts on WeChat!</text>
 
     <view class='get-started'>
