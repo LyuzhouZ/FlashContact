@@ -2,7 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/panorama/panorama"
+    "pages/panorama/panorama",
+    "pages/profile/createProfile",
+    "pages/contacts/myContacts"
   ],
   "window":{
     "backgroundTextStyle":"light",

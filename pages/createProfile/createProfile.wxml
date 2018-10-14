@@ -1,0 +1,8 @@
+<form bindsubmit="bindFormSubmit">
+    <view>Enter your details</view>
+    <view>
+      <input name="name" placeholder="Name"/>
+      <input name="email" placeholder="Email"/>
+    </view>
+    <button type="primary" form-type="submit">Save Details</button>
+</form>
