@@ -5,7 +5,7 @@
       <block wx:else>
         <image bindtap="bindViewTap" class="userinfo-avatar" src="../../image/L.PNG" mode="cover"></image>
         <text class="userinfo-nickname">oasis-hope</text>
-        <text class="userinfo-email">{{profileInfo.email}}</text>
+        <text class="userinfo-email">richard@outlook.com</text>
       </block>
     </view>
     <!-- <view class="page__title">Input</view>
@@ -64,8 +64,8 @@
         </view>
 
         <button>Edit Profile Tags</button>
-        <view bindtap="onShareAppMessage">
-            <button class='primary'>Share Profile</button>
+        <view bindtap='onShareAppMessage'>
+            <button open-type="share" class='share-btn primary'>Share Profile</button>
         </view>
       </view>
     </view>
