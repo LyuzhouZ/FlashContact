@@ -2,14 +2,34 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/panorama/panorama",
-    "pages/profile/createProfile",
-    "pages/contacts/myContacts"
+    "pages/panorama/panorama"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFE",
+    "borderStyle": "#D3D3D3",
+    "selectedColor": "#D03232",
+    "color": "#131313",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/about.png",
+      "selectedIconPath": "image/about-hover.png",
+      "text": "My Profile"
+    }, {
+      "pagePath": "pages/index/index",
+      "iconPath": "image/about.png",
+      "selectedIconPath": "image/about-hover.png",
+      "text": "Contacts"
+    }, {
+      "pagePath": "pages/index/index",
+      "iconPath": "image/about.png",
+      "selectedIconPath": "image/about-hover.png",
+      "text": "Settings"
+    }]
   }
 }

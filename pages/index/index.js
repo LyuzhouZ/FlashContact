@@ -16,6 +16,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  bindFormSubmit: function() {
+    wx.navigateTo({
+      url: 'pages/profile/profile'
+    });
+  },
   displayAge: function() {
     if( app.globalData.sotAge) {
         this.setData({

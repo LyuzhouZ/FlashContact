@@ -2,11 +2,13 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
+    // API call to get data from the local cache
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
     // 登录
+    //call login interface
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
@@ -33,6 +35,22 @@ App({
       }
     })
   },
+
+  // Get user info
+  // getUserInfo: function(cb) {
+  //   var that = this;
+  //   if(this.globalData.userInfo) {
+  //     typeof cb == "function" && cb(this.globalData.userInfo)
+  //   } else {
+  //     wx.login({
+  //       success: function() {
+  //         wx.getUserInfo
+  //       }
+  //     })
+  //   }
+  // },
+
+  // global vars
   globalData: {
     userInfo: null,
     sotAge: 30
