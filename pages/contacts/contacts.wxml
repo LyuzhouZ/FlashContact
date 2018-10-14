@@ -60,6 +60,24 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/Lucia.JPG" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Lucia Garcia</view>
+                        <view class="weui-media-box__desc">Lucia is responsible for marketing, promoting our app to the startup community.</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../image/Lini.JPG" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Lini Poeppe</view>
+                        <view class="weui-media-box__desc">Lini does market research, providing the design and development team with insightful market info.</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="../../image/Tibet.jpg" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
