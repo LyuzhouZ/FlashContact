@@ -10,7 +10,7 @@
     text-align: center;
     padding: 4px 0;
     /* border-top: 1px solid #000; */
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #D9D9D9;
     font-size: 18px;
     display: block;
 }
@@ -20,7 +20,7 @@
     text-align: center;
     padding: 4px 0;
     /* border-top: 1px solid #000; */
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #D9D9D9;
     font-size: 18px;
 }
 
