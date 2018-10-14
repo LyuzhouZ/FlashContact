@@ -1,5 +1,5 @@
 const app = getApp();
-var base64 = require("../images/base64");
+//var base64 = require("image/");
 
 // pages/contacts/contacts.js
 Page({
@@ -15,10 +15,10 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function() {
-    this.setData({
-      icon20: base64.icon20,
-      icon60: base64.icon60
-    });
+  //  this.setData({
+  //    icon20: base64.icon20,
+  //    icon60: base64.icon60
+  //  });
   },
 
   /**
