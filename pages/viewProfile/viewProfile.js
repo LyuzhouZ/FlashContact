@@ -5,6 +5,11 @@ Page({
    */
   data: {
     profileInfo:{
+      fname: '',
+      lname: '',
+      email: '',
+      org: '',
+      position: '',
       name: '', email: '', company: '', phone: ''
     }
   },

@@ -1,14 +1,65 @@
-<view class="header">
-    <view class="h1-header">User Profile</view>
+<view class='container'>
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <view class="page__hd">
+        <view class="page__title">Input</view>
+        <view class="page__desc">表单输入</view>
+      </view>
+
+      <view class='page__bd'>
+        <view class="userinfo">
+          <button 
+            open-type="getUserInfo" 
+            bindgetuserinfo="onGetUserInfo"
+            class="userinfo-avatar"
+            style="background-image: url({{avatarUrl}})"
+          ></button>
+          <view>
+            <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+          </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">{{profileInfo.name}}</view>
+                <!-- <view class="weui-cell__ft">Name</view> -->
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">{{profileInfo.email}}</view>
+                <!-- <view class="weui-cell__ft">Email</view> -->
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">{{profileInfo.company}}</view>
+                <!-- <view class="weui-cell__ft">Company</view> -->
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">{{profileInfo.company}}</view>
+                <view class="weui-cell__ft">Company</view>
+            </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="header">
+      <view class="h1-header">User Profile</view>
+  </view>
+
+  <block>
+  <text>Name: {{profileInfo.name}}</text>
+  <text>Email: {{profileInfo.email}}</text>
+  <text>Company: {{profileInfo.company}}</text>
+  <text>Phone Number: {{profileInfo.phone}}</text>
+
+  </block>
+
+  <button>Edit Profile</button>
+  <view bindtap="onShareAppMessage">
+      <button>Share Profile</button>
+  </view>
 </view>
-
-<block>
-<text>Name: {{profileInfo.name}}</text>
-<text>Email: {{profileInfo.email}}</text>
-<text>Company: {{profileInfo.company}}</text>
-<text>Phone Number: {{profileInfo.phone}}</text>
-
-</block>
-
-<button>Edit Profile</button>
-<button>Share Profile</button>

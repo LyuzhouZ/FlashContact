@@ -8,22 +8,75 @@
     </block>
   </view>
 
-  <view class="userForm">
-    <form bindsubmit="bindFormSubmit">
-      <text>Name:</text> <input name="name" placeholder="Name" />
-      <text>Email:</text><input name="email" placeholder="Email" />
-      <text>Company:</text><input name="company" placeholder="Company" />
-      <text>Phone Number:</text><input name="phone" placeholder="Phone Number" />
-      <button class="btn" type="primary" form-type='submit' loading="{{loading}}" disabled="{{disabled}}" >
-        Save
-      </button>
-    </form>
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <form bindsubmit='bindFormSubmit'>
+        <view class="weui-cells__title">Basic Information</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="name" placeholder="Full Name"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="email" placeholder="Email"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="title" placeholder="Job Title"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="position" placeholder="Position"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="" placeholder="Organization"/>
+              </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title" style='margin-top: 20px;'>Other Information</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="phone" placeholder="Phone Number"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="" placeholder="Work Address"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="org" placeholder="Looking for:"/>
+              </view>
+          </view>
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <textarea class="weui-textarea" placeholder="About Me..." auto-height='' />
+              <view class="weui-textarea-counter">0/200</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="btn-area submit-form" style='padding:0;'>
+          <button type="primary" formType="submit">Submit</button>
+          <button formType="reset">Reset</button>
+        </view>
+      </form>
+    </view>
   </view>
 
 
-  <view class="usermotto">
+  <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
   <button bindtap="displayAge" >PUSH ME! AND THEN JUST TOUCH ME!</button>
-  <text>{{sotAgeData}}</text>
+  <text>{{sotAgeData}}</text> -->
 </view>

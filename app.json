@@ -1,37 +1,42 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/panorama/panorama",
     "pages/viewProfile/viewProfile",
-    "pages/contacts/viewContacts"
+    "pages/contacts/viewContacts",
+    "pages/editProfile/editProfile"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1AAD19",
+    "navigationBarTitleText": "WeLink",
+    "navigationBarTextStyle": "light"
   },
   "tabBar": {
     "backgroundColor": "#FFFFFE",
     "borderStyle": "#D3D3D3",
     "selectedColor": "#D03232",
     "color": "#131313",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "image/about.png",
-      "selectedIconPath": "image/about-hover.png",
-      "text": "My Profile"
-    }, {
-      "pagePath": "pages/contacts/viewContacts",
-      "iconPath": "image/about.png",
-      "selectedIconPath": "image/about-hover.png",
-      "text": "Contacts"
-    }, {
-      "pagePath": "pages/index/index",
-      "iconPath": "image/about.png",
-      "selectedIconPath": "image/about-hover.png",
-      "text": "Settings"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/about.png",
+        "selectedIconPath": "image/about-hover.png",
+        "text": "My Profile"
+      },
+      {
+        "pagePath": "pages/contacts/viewContacts",
+        "iconPath": "image/about.png",
+        "selectedIconPath": "image/about-hover.png",
+        "text": "Contacts"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/about.png",
+        "selectedIconPath": "image/about-hover.png",
+        "text": "Settings"
+      }
+    ]
   }
 }

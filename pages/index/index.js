@@ -26,7 +26,7 @@ Page({
           wx.navigateTo({
             url: '../viewProfile/viewProfile'
           });
-        }, 5000)
+        }, 1000)
         
       }
     })

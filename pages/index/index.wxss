@@ -19,3 +19,7 @@
 .usermotto {
   margin-top: 200px;
 }
+
+button[type="primary"] {
+  /* background: #D03232; */
+}
