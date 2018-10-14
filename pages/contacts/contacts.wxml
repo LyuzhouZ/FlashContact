@@ -34,7 +34,7 @@
             <view class="weui-panel__bd">
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../image/S.PNG" />
+                        <image class="weui-media-box__thumb" src="../../image/sot.png" />
                     </view>
                     <view bindtap="bindViewTapContactSot" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Sotiris PrettyBoy Stasinopoulos</view>
@@ -43,7 +43,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../image/L.PNG" />
+                        <image class="weui-media-box__thumb" src="../../image/richard.png" />
                     </view>
                     <view bindtap="bindViewTapContactRichard" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Lyuzhou WiggleWiggle Zhuang</view>
@@ -52,7 +52,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../image/P.PNG" />
+                        <image class="weui-media-box__thumb" src="../../image/paul.png" />
                     </view>
                     <view bindtap="bindViewTapContactPaul" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Paul HotStuff Oladimeji</view>
@@ -61,7 +61,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../image/Lucia.PNG" />
+                        <image class="weui-media-box__thumb" src="../../image/lucia.png" />
                     </view>
                     <view bindtap="bindViewTapContactLucia" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Lucia SpicyMami Garcia</view>
@@ -70,7 +70,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../image/Lini.PNG" />
+                        <image class="weui-media-box__thumb" src="../../image/lini.png" />
                     </view>
                     <view bindtap="bindViewTapContactLini" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Lini Bombastic Poeppe</view>

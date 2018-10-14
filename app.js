@@ -1,6 +1,10 @@
 //app.js
 App({
   onLaunch: function () {
+    //var appDetails = wx.getStorageSync('appUserDetails') || [];
+    // appDetails.length = 0;
+    // wx.setStorageSync('appUserDetails');
+    //localStorage.removeItem('appUserDetails');
     // 展示本地存储能力
     // API call to get data from the local cache
     var logs = wx.getStorageSync('logs') || []
@@ -53,6 +57,15 @@ App({
   // global vars
   globalData: {
     userInfo: null,
-    sotAge: 30
+    sotAge: 30,
+    profileInfo:{
+      name: '',
+      email: '',
+      org: '',
+      title: '',
+      phone: '',
+      address: '',
+      lookingfor: ''
+    },
   }
 })

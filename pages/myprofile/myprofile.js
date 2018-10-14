@@ -51,7 +51,7 @@ Page({
         title: 'Error',
         content: 'Please fill in all your contact information',
         confirmText: "Ok",
-        showCancel: true,
+        //showCancel: true,
         success: function (res) {
            console.log('success')
         }
@@ -81,6 +81,7 @@ Page({
   },
   
   onLoad: function () {
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -107,6 +108,17 @@ Page({
         }
       })
     }
+  },
+  onShow: () => {
+    var appDetails = wx.getStorageSync('appUserDetails') || [];
+    // if(appDetails != undefined || appDetails.length != 0) {
+    //   wx.navigateTo({
+    //     url: '../viewProfile/viewProfile'
+    //   });
+    // }
+    // if(localStorage.getItem('appUserDetails')) {
+    //   wx.navigateTo('../viewProfile/viewProfile');
+    // }
   },
   getUserInfo: function(e) {
     console.log(e)
