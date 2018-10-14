@@ -10,7 +10,11 @@
     "pages/settings/settings",
     "pages/contacts/contacts",
     "pages/aboutus/aboutus",
-    "pages/contactProfile1/contactProfile1"
+    "pages/contactProfilePaul/contactProfilePaul",
+    "pages/contactProfileSot/contactProfileSot",
+    "pages/contactProfileRichard/contactProfileRichard",
+    "pages/contactProfileLucia/contactProfileLucia",
+    "pages/contactProfileLini/contactProfileLini"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .weui-progress {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,11 +15,3 @@
   margin-left: 15px;
   font-size: 0;
 }
-=======
-/*!
- * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
- * Copyright 2017 Tencent, Inc.
- * Licensed under the MIT license
- */
-.weui-progress{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.weui-progress__bar{-webkit-box-flex:1;-webkit-flex:1;flex:1}.weui-progress__opr{margin-left:15px;font-size:0}
->>>>>>> e622c2ad5e83653c7f4a7526660a618b9c6f092e

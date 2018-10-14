@@ -50,3 +50,55 @@ text-align: center;
     font-size: 18px;
     display: block;
 }
+
+/* pages/contacts/contacts.wxss */
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+
+.contact-card_preview{
+      margin: 4px 0;
+    text-align: center;
+    padding: 4px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+}
+
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
+.mini-btn{
+    margin-right: 5px;
+     width: 40%;
+}
+
+.weui-search-bar__input{
+text-align: center;
+    display: block;
+}
+
+.search_button{
+    text-align: center;
+     display: block;
+}
+
+.title{
+    margin: 10px 0;
+    text-align: center;
+    padding: 4px 0;
+    /* border-top: 1px solid #000; */
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    display: block;
+    
+}

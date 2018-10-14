@@ -11,20 +11,41 @@ Page({
 
   },
 
-  bindViewTapContact1: function () {
+  bindViewTapContactPaul: function () {
     wx.navigateTo({
-      url: '../contactProfile1/contactProfile1'
+      url: '../contactProfilePaul/contactProfilePaul'
+    })
+  },
+
+  bindViewTapContactSot: function () {
+    wx.navigateTo({
+      url: '../contactProfileSot/contactProfileSot'
+    })
+  },
+
+  bindViewTapContactRichard: function () {
+    wx.navigateTo({
+      url: '../contactProfileRichard/contactProfileRichard'
+    })
+  },
+
+  bindViewTapContactLini: function () {
+    wx.navigateTo({
+      url: '../contactProfileLini/contactProfileLini'
+    })
+  },
+
+  bindViewTapContactLucia: function () {
+    wx.navigateTo({
+      url: '../contactProfileLucia/contactProfileLucia'
     })
   },
 
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function() {
-  //  this.setData({
-  //    icon20: base64.icon20,
-  //    icon60: base64.icon60
-  //  });
+  onLoad: function (options) {
+
   },
 
   /**
@@ -75,4 +96,5 @@ Page({
   onShareAppMessage: function () {
 
   }
+
 })

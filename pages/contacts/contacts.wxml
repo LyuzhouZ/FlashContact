@@ -1,3 +1,4 @@
+
 <!--pages/contacts/contacts.wxml-->
 <text class='title'>Contacts</text>
 <view class="page">
@@ -35,8 +36,8 @@
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="../../image/S.JPG" />
                     </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">Sotiris Handsome Stasinopoulos</view>
+                    <view bindtap="bindViewTapContactSot" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Sotiris Stasinopoulos</view>
                         <view class="weui-media-box__desc">Sotiris is the founder and CEO of Popular Robotics Inc. He aims to make robots accessible to everyone by providing easy-to-follow robotic courses and encouraging people to share and cooperate. Also an awesome dude from the beautiful Greece</view>
                     </view>
                 </navigator>
@@ -44,7 +45,7 @@
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="../../image/L.JPG" />
                     </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view bindtap="bindViewTapContactRichard" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Lyuzhou Zhuang</view>
                         <view class="weui-media-box__desc">Lyuzhou is the second member of the team. He's taking care of the software part of the robots, working hard to make them do awesome stuff.</view>
                     </view>
@@ -53,16 +54,16 @@
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="../../image/P.PNG" />
                     </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view bindtap="bindViewTapContactPaul" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Paul Oladimeji</view>
-                        <view class="weui-media-box__desc">Paul is the third member of the team. He's creating beautiful onlice presentations of all the course materials, and of course, the company. </view>
+                        <view class="weui-media-box__desc">Paul is the third member of the team. He's creating beautiful online presentations of all the course materials, and of course, the company. </view>
                     </view>
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="../../image/Lucia.JPG" />
                     </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view bindtap="bindViewTapContactLucia" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Lucia Garcia</view>
                         <view class="weui-media-box__desc">Lucia is responsible for marketing, promoting our app to the startup community.</view>
                     </view>
@@ -71,12 +72,12 @@
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="../../image/Lini.JPG" />
                     </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view bindtap="bindViewTapContactLini" class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">Lini Poeppe</view>
                         <view class="weui-media-box__desc">Lini does market research, providing the design and development team with insightful market info.</view>
                     </view>
                 </navigator>
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <!-- <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="../../image/Tibet.jpg" />
                     </view>
@@ -84,13 +85,9 @@
                         <view class="weui-media-box__title">Educators and Developers</view>
                         <view class="weui-media-box__desc">We are hiring! Interns welcome! :-D</view>
                     </view>
-                </navigator>
+                </navigator> -->
             </view>
         </view>
     </view>
 
-</view>
-
-<view bindtap="bindViewTapContact1" class="contact-card_preview">
- <text>Paul Oladimeji</text>
 </view>
