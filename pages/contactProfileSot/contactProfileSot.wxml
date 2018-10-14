@@ -1,0 +1,73 @@
+<view class='container'>
+  <view class="page__hd">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称/Click here to login </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="../../image/S.PNG" mode="cover"></image>
+        <text class="userinfo-nickname">sotiris</text>
+        <text class="userinfo-email">{{profileInfo.email}}</text>
+      </block>
+    </view>
+    <!-- <view class="page__title">Input</view>
+    <view class="page__desc">表单输入</view> -->
+  </view>
+  
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      
+
+      <view class='page__bd'>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell profileName">
+                <view class="weui-cell__bd"><icon class=''></icon>Sotiris Stasinopoulos</view>
+                <!-- <view class="weui-cell__ft">Name</view> -->
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd"><icon class=''></icon>sotstas@gmail.com</view>
+                <!-- <view class="weui-cell__ft">Email</view> -->
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd"><icon class=''></icon>Popular Robotics</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd"><icon class=''></icon>CEO, Robotics Engineer</view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title" style='margin-top: 20px;'>Other Information</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd"><icon class=''></icon>+8618513813913</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd"><icon class=''></icon>Looking for: Developers, Investors</view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title" style='margin-top: 20px;'>Tags</view>
+        <view class="weui-cells weui-cells_after-title">
+             <view class="button-sp-area">
+             <button class="weui-btn mini-btn" type="default" size="mini">Entrepreneur</button>
+            <button class="weui-btn mini-btn" type="default" size="mini">Developer</button>
+                        <button class="weui-btn mini-btn" type="default" size="mini">Beijing</button>
+            <button class="weui-btn mini-btn" type="default" size="mini">Startup Grind</button>
+            <button class="weui-btn mini-btn" type="default" size="mini">Hack The Community</button>
+        </view>
+        </view>
+
+        <button>Edit Profile Tags</button>
+        <view bindtap="onShareAppMessage">
+            <button class='primary'>Share Profile</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

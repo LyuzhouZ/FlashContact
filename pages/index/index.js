@@ -33,7 +33,12 @@ Page({
    * Lifecycle function--Called when page hide
    */
   onHide: function () {
+  },
 
+  bindFormSubmit: function() {
+    wx.navigateTo({
+      url: 'pages/profile/profile'
+    });
   },
 
   /**

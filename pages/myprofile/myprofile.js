@@ -35,14 +35,17 @@ Page({
     const myDetails = {...e.detail.value}
     for (const key in myDetails) {
       if (myDetails.hasOwnProperty(key)) {
+        console.log(myDetails[key]);
         //console.log(myDetails);
         if(myDetails.name == '' || myDetails.email == '' || myDetails.oeg == '' || myDetails.title == '') {
           emptyOrNot = false;
+        } else {
+          emptyOrNot = true;
         }
         //const element = object[key];
       }
     }
-    if(!emptyOrNot) {
+    if(emptyOrNot == false) {
       
       wx.showModal({
         title: 'Error',

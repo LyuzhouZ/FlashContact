@@ -1,3 +1,6 @@
+const app = getApp();
+//var base64 = require("image/");
+
 // pages/contacts/contacts.js
 Page({
 
@@ -6,6 +9,36 @@ Page({
    */
   data: {
 
+  },
+
+  bindViewTapContactPaul: function () {
+    wx.navigateTo({
+      url: '../contactProfilePaul/contactProfilePaul'
+    })
+  },
+
+  bindViewTapContactSot: function () {
+    wx.navigateTo({
+      url: '../contactProfileSot/contactProfileSot'
+    })
+  },
+
+  bindViewTapContactRichard: function () {
+    wx.navigateTo({
+      url: '../contactProfileRichard/contactProfileRichard'
+    })
+  },
+
+  bindViewTapContactLini: function () {
+    wx.navigateTo({
+      url: '../contactProfileLini/contactProfileLini'
+    })
+  },
+
+  bindViewTapContactLucia: function () {
+    wx.navigateTo({
+      url: '../contactProfileLucia/contactProfileLucia'
+    })
   },
 
   /**
@@ -63,4 +96,5 @@ Page({
   onShareAppMessage: function () {
 
   }
+
 })

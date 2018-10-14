@@ -9,7 +9,12 @@
     "pages/editProfile/editProfile",
     "pages/settings/settings",
     "pages/contacts/contacts",
-    "pages/aboutus/aboutus"
+    "pages/aboutus/aboutus",
+    "pages/contactProfilePaul/contactProfilePaul",
+    "pages/contactProfileSot/contactProfileSot",
+    "pages/contactProfileRichard/contactProfileRichard",
+    "pages/contactProfileLucia/contactProfileLucia",
+    "pages/contactProfileLini/contactProfileLini"
   ],
   "window": {
     "backgroundTextStyle": "light",
