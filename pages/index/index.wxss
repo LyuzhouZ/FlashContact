@@ -1,25 +1,69 @@
-/**index.wxss**/
-.userinfo {
+/* pages/getstarted/getstarted.wxss */
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.imgur.com/xMEAA3N.jpg") center center no-repeat;
+  background-size: cover;
+}
+.bg-img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #cdeb8e, #a5c956);
+  opacity: .7;
+}
+
+.bg-img .page-content {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 22;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+}
+.bg-img .page-content .get-started {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.bg-img .page-content text {
+  z-index: 1000;
+}
+button {
+  border-radius: 50px;
+  background: #fff;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+.lined.thin {
+  align-self: center;
+  background: transparent;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 2px #41403E;
+}
+.lined.thin:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-button[type="primary"] {
-  /* background: #D03232; */
+.desc {
+  margin: 50px 0;
+  /* font-weight: bold; */
+  font-size: 18px;
+  
 }

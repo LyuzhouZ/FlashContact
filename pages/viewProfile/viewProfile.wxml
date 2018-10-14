@@ -23,12 +23,12 @@
                 <!-- <view class="weui-cell__ft">Name</view> -->
             </view>
         </view>
-        <view class="weui-cells weui-cells_after-title">
+        <!-- <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
                 <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.email}}</view>
-                <!-- <view class="weui-cell__ft">Email</view> -->
+                <view class="weui-cell__ft">Email</view>
             </view>
-        </view>
+        </view> -->
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
                 <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.org}}</view>
@@ -53,8 +53,8 @@
         </view>
 
         <button>Edit Profile</button>
-        <view bindtap="onShareAppMessage">
-            <button class='primary'>Share Profile</button>
+        <view bindtap='onShareAppMessage'>
+            <button open-type="share" class='share-btn primary'>Share Profile</button>
         </view>
       </view>
     </view>

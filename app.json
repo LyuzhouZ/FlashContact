@@ -3,10 +3,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/panorama/panorama",
+    "pages/myprofile/myprofile",
     "pages/viewProfile/viewProfile",
     "pages/contacts/viewContacts",
     "pages/editProfile/editProfile",
-    "pages/getstarted/getstarted",
     "pages/settings/settings",
     "pages/contacts/contacts",
     "pages/aboutus/aboutus"
@@ -24,7 +24,7 @@
     "color": "#131313",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/myprofile/myprofile",
         "iconPath": "image/profile-icon.png",
         "selectedIconPath": "image/profile-icon.png",
         "text": "My Profile"

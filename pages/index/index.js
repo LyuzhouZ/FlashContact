@@ -1,79 +1,72 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
+// pages/getstarted/getstarted.js
 Page({
+
+  /**
+   * Page initial data
+   */
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    sotAgeData:"",
+
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+
+  /**
+   * Lifecycle function--Called when page load
+   */
+  onLoad: function (options) {
+
   },
-  bindFormSubmit: function(e) {
-    const myDetails = {...e.detail.value}
-    wx.setStorage({
-      key: 'appUserDetails',
-      data: myDetails, success: function(){
-        console.log('Saved user info');
-        setTimeout(()=>{
-          wx.navigateTo({
-            url: '../viewProfile/viewProfile'
-          });
-        }, 1000)
-        
-      }
-    })
-    
+
+  /**
+   * Lifecycle function--Called when page is initially rendered
+   */
+  onReady: function () {
+
   },
-  displayAge: function() {
-    if( app.globalData.sotAge) {
-        this.setData({
-          sotAgeData : app.globalData.sotAge
-        })
-    }
+
+  /**
+   * Lifecycle function--Called when page show
+   */
+  onShow: function () {
+
   },
-  
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+
+  /**
+   * Lifecycle function--Called when page hide
+   */
+  onHide: function () {
+
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+
+  /**
+   * Lifecycle function--Called when page unload
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * Page event handler function--Called when user drop down
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * Called when page reach bottom
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * Called when user click on the top right corner to share
+   */
+  onShareAppMessage: function () {
+
+  },
+
+  goToProfile: (e) => {
+    wx.switchTab({
+      url: '../myprofile/myprofile',
     })
   }
 })
