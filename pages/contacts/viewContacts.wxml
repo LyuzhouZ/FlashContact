@@ -1,0 +1,9 @@
+<view class="header">
+    <view class="h1-header">View Contacts</view>
+</view>
+<view class="profile-container">
+    <block>
+        <view class="card">
+        </view>
+    </block>
+</view>

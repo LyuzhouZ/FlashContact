@@ -9,6 +9,3 @@
 <text>Phone Number: {{profileInfo.phone}}</text>
 
 </block>
-
-<button>Edit Profile</button>
-<button>Share Profile</button>

@@ -2,7 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/panorama/panorama"
+    "pages/panorama/panorama",
+    "pages/viewProfile/viewProfile",
+    "pages/contacts/viewContacts"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,7 +23,7 @@
       "selectedIconPath": "image/about-hover.png",
       "text": "My Profile"
     }, {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/contacts/viewContacts",
       "iconPath": "image/about.png",
       "selectedIconPath": "image/about-hover.png",
       "text": "Contacts"
