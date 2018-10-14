@@ -1,0 +1,78 @@
+<!--pages/settings/settings.wxml-->
+<view class="settings-page">
+<text  class="title">Settings</text>
+
+<checkbox-group bindchange="checkboxChange">
+ 
+  <label class="checkbox" wx:for="{{items}}">
+    <view> <checkbox value="{{item.name}}" checked="{{item.checked}}"/> {{item.value}}  </view>
+  </label>
+  
+</checkbox-group>
+
+    <view class="subtitle">
+        <text>Language</text>
+    </view>
+
+        <!-- <view class="weui-cells__title">单选列表项</view> -->
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioChange1">
+                <label class="weui-cell weui-check__label" wx:for="{{radioItems1}}" wx:key="value">
+                   <view> <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}} </view>
+<!-- 
+                    <view class="weui-cell__bd">{{item.name}}</view> -->
+                    <!-- <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view> -->
+                </label>
+            </radio-group>
+            <!-- <view class="weui-cell weui-cell_link">
+                <view class="weui-cell__bd">添加更多</view>
+            </view> -->
+        </view>
+
+
+
+
+    <view class="subtitle">
+        <text>Privacy</text>
+    </view>
+
+        <!-- <view class="weui-cells__title">单选列表项</view> -->
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioChange2">
+                <label class="weui-cell weui-check__label" wx:for="{{radioItems2}}" wx:key="value">
+                   <view> <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}} </view>
+<!-- 
+                    <view class="weui-cell__bd">{{item.name}}</view> -->
+                    <!-- <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view> -->
+                </label>
+            </radio-group>
+            <!-- <view class="weui-cell weui-cell_link">
+                <view class="weui-cell__bd">添加更多</view>
+            </view> -->
+        </view>
+
+
+            <view class="subtitle">
+        <text>Feedback</text> </view>
+        <!-- <view class="weui-cells__title">文本域</view> -->
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="Insert Text" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+        <view  class="sub_button">
+        <button bindtap="submitFeedback" class="weui-btn mini-btn" type="default" size="mini">Submit</button>
+    </view>
+
+<view bindtap="bindViewTap" class="subtitle">
+ <text>About Us</text>
+</view>
+
+</view>

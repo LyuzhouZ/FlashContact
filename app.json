@@ -6,7 +6,10 @@
     "pages/viewProfile/viewProfile",
     "pages/contacts/viewContacts",
     "pages/editProfile/editProfile",
-    "pages/getstarted/getstarted"
+    "pages/getstarted/getstarted",
+    "pages/settings/settings",
+    "pages/contacts/contacts",
+    "pages/aboutus/aboutus"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,20 +25,20 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/about.png",
-        "selectedIconPath": "image/about-hover.png",
+        "iconPath": "image/profile-icon.png",
+        "selectedIconPath": "image/profile-icon.png",
         "text": "My Profile"
       },
       {
-        "pagePath": "pages/contacts/viewContacts",
-        "iconPath": "image/about.png",
-        "selectedIconPath": "image/about-hover.png",
+        "pagePath": "pages/contacts/contacts",
+        "iconPath": "image/contacts-icon.png",
+        "selectedIconPath": "image/contacts-icon.png",
         "text": "Contacts"
       },
       {
-        "pagePath": "pages/getstarted/getstarted",
-        "iconPath": "image/about.png",
-        "selectedIconPath": "image/about-hover.png",
+        "pagePath": "pages/settings/settings",
+        "iconPath": "image/settings-icon.png",
+        "selectedIconPath": "image/settings-icon.png",
         "text": "Settings"
       }
     ]
