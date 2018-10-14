@@ -5,7 +5,8 @@
     "pages/panorama/panorama",
     "pages/viewProfile/viewProfile",
     "pages/contacts/viewContacts",
-    "pages/editProfile/editProfile"
+    "pages/editProfile/editProfile",
+    "pages/getstarted/getstarted"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,7 +33,7 @@
         "text": "Contacts"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/getstarted/getstarted",
         "iconPath": "image/about.png",
         "selectedIconPath": "image/about-hover.png",
         "text": "Settings"

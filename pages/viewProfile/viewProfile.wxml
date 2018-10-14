@@ -1,65 +1,62 @@
 <view class='container'>
+  <view class="page__hd">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称/Click here to login </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-email">{{profileInfo.email}}</text>
+      </block>
+    </view>
+    <!-- <view class="page__title">Input</view>
+    <view class="page__desc">表单输入</view> -->
+  </view>
+  
   <view class="page-body">
     <view class="page-section page-section-gap">
-      <view class="page__hd">
-        <view class="page__title">Input</view>
-        <view class="page__desc">表单输入</view>
-      </view>
+      
 
       <view class='page__bd'>
-        <view class="userinfo">
-          <button 
-            open-type="getUserInfo" 
-            bindgetuserinfo="onGetUserInfo"
-            class="userinfo-avatar"
-            style="background-image: url({{avatarUrl}})"
-          ></button>
-          <view>
-            <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
-          </view>
-        </view>
         <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
-                <view class="weui-cell__bd">{{profileInfo.name}}</view>
+            <view class="weui-cell profileName">
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.name}}</view>
                 <!-- <view class="weui-cell__ft">Name</view> -->
             </view>
         </view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
-                <view class="weui-cell__bd">{{profileInfo.email}}</view>
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.email}}</view>
                 <!-- <view class="weui-cell__ft">Email</view> -->
             </view>
         </view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
-                <view class="weui-cell__bd">{{profileInfo.company}}</view>
-                <!-- <view class="weui-cell__ft">Company</view> -->
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.org}}</view>
             </view>
         </view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
-                <view class="weui-cell__bd">{{profileInfo.company}}</view>
-                <view class="weui-cell__ft">Company</view>
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.position}}</view>
             </view>
+        </view>
+
+        <view class="weui-cells__title" style='margin-top: 20px;'>Other Information</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.position}}</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.position}}</view>
+            </view>
+        </view>
+
+        <button>Edit Profile</button>
+        <view bindtap="onShareAppMessage">
+            <button class='primary'>Share Profile</button>
         </view>
       </view>
     </view>
-  </view>
-
-  <view class="header">
-      <view class="h1-header">User Profile</view>
-  </view>
-
-  <block>
-  <text>Name: {{profileInfo.name}}</text>
-  <text>Email: {{profileInfo.email}}</text>
-  <text>Company: {{profileInfo.company}}</text>
-  <text>Phone Number: {{profileInfo.phone}}</text>
-
-  </block>
-
-  <button>Edit Profile</button>
-  <view bindtap="onShareAppMessage">
-      <button>Share Profile</button>
   </view>
 </view>

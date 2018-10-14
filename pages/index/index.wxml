@@ -25,17 +25,12 @@
           </view>
           <view class="weui-cell weui-cell_input">
               <view class="weui-cell__bd">
-                  <input class="weui-input" name="title" placeholder="Job Title"/>
-              </view>
-          </view>
-          <view class="weui-cell weui-cell_input">
-              <view class="weui-cell__bd">
-                  <input class="weui-input" name="position" placeholder="Position"/>
-              </view>
-          </view>
-          <view class="weui-cell weui-cell_input">
-              <view class="weui-cell__bd">
                   <input class="weui-input" name="" placeholder="Organization"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name="title" placeholder="Job Title"/>
               </view>
           </view>
         </view>
