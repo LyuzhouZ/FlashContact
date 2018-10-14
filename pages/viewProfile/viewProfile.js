@@ -11,9 +11,10 @@ Page({
       name: '',
       email: '',
       org: '',
-      position: '',
+      title: '',
       phone: '',
-      
+      address: '',
+      lookingfor: ''
     },
     userInfo: {},
     hasUserInfo: false,

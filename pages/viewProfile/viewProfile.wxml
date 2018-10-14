@@ -36,23 +36,27 @@
         </view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
-                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.position}}</view>
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.title}}</view>
             </view>
         </view>
 
         <view class="weui-cells__title" style='margin-top: 20px;'>Other Information</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
-                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.position}}</view>
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.phone}}</view>
             </view>
         </view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
-                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.position}}</view>
+                <view class="weui-cell__bd"><icon class=''></icon>{{profileInfo.lookingfor}}</view>
             </view>
         </view>
 
-        <button>Edit Profile</button>
+        <button>
+          <navigator>
+            Edit Profile
+          </navigator>
+        </button>
         <view bindtap='onShareAppMessage'>
             <button open-type="share" class='share-btn primary'>Share Profile</button>
         </view>

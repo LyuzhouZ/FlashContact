@@ -25,7 +25,7 @@
           </view>
           <view class="weui-cell weui-cell_input">
               <view class="weui-cell__bd">
-                  <input class="weui-input" name="" placeholder="Organization"/>
+                  <input class="weui-input" name="org" placeholder="Organization"/>
               </view>
           </view>
           <view class="weui-cell weui-cell_input">
@@ -44,12 +44,12 @@
           </view>
           <view class="weui-cell weui-cell_input">
               <view class="weui-cell__bd">
-                  <input class="weui-input" name="" placeholder="Work Address"/>
+                  <input class="weui-input" name="address" placeholder="Work Address"/>
               </view>
           </view>
           <view class="weui-cell weui-cell_input">
               <view class="weui-cell__bd">
-                  <input class="weui-input" name="org" placeholder="Looking for:"/>
+                  <input class="weui-input" name="lookingfor" placeholder="Looking for:"/>
               </view>
           </view>
           <view class="weui-cell">

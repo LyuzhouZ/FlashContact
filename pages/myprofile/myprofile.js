@@ -9,6 +9,15 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     sotAgeData:"",
+    array: ['Work', 'Developers', 'Partners', 'Internships'],
+    index: 0,
+  },
+
+  bindPickerChange(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -17,7 +26,35 @@ Page({
     })
   },
   bindFormSubmit: function(e) {
+    console.log(e);
+    // if(e.detail.value = '') {
+    //   return false;
+    //   console.log('You have to enter a value');
+    // }
+    var emptyOrNot;
     const myDetails = {...e.detail.value}
+    for (const key in myDetails) {
+      if (myDetails.hasOwnProperty(key)) {
+        //console.log(myDetails);
+        if(myDetails.name == '' || myDetails.email == '' || myDetails.oeg == '' || myDetails.title == '') {
+          emptyOrNot = false;
+        }
+        //const element = object[key];
+      }
+    }
+    if(!emptyOrNot) {
+      
+      wx.showModal({
+        title: 'Error',
+        content: 'Please fill in all your contact information',
+        confirmText: "Ok",
+        showCancel: true,
+        success: function (res) {
+           console.log('success')
+        }
+      })
+      return false;
+    }
     wx.setStorage({
       key: 'appUserDetails',
       data: myDetails, success: function(){
